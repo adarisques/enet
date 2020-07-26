@@ -1,0 +1,6 @@
+baseURL = "https://enet.ada-risques.fr/"
+languageCode = "fr-FR"
+title = "enet"
+author = "AdA Risques"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+theme = "ada-kanzan"

@@ -1,0 +1,31 @@
+{
+    "avatar":"/img/avatars/eye.jpg",
+    "surname":"Jean",
+    "lastname":"Dupont",
+    "promotion": {
+        "year": 2020,
+        "major": "CLV"
+    },
+    "social": [
+        {
+            "type": "mail",
+            "value": "adresse@mail.com"
+        },
+        {
+            "type": "postal",
+            "value": "1 rue d'Ici, 99000 Ville, France"
+        },
+        {
+            "type": "phone",
+            "value": "06 78 91 23 45"
+        },
+        {
+            "type": "twitter",
+            "value": "@user"
+        },
+        {
+            "type": "linkedin",
+            "value": "in/user"
+        }
+    ]
+}
