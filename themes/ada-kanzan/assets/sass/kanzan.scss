@@ -8,6 +8,10 @@ a {
     color: #794ca6;
 }
 
+.text-primary {
+    color: #794ca6 !important;
+}
+
 .btn-primary {
     border-color: #1a0034;
     background-color: #400080;
@@ -154,6 +158,18 @@ body.bg-ada .card-header .list-group-item.active {
     [role="main"] {
         padding-top: 48px; /* Space for fixed navbar */
     }
+}
+
+/*
+* Evénements
+*/
+
+.event-card .card-img-top {
+    overflow: hidden;
+    height: 0;
+    padding-bottom: calc(100% / 2.35);
+    background-size: cover;
+    background-position: center center;
 }
 
 /*
