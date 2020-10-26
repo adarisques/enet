@@ -172,6 +172,14 @@ body.bg-ada .card-header .list-group-item.active {
     background-position: center center;
 }
 
+.event-card .card-subtitle * {
+    display: inline-block;
+
+    &::first-letter {
+        text-transform: capitalize;
+    }
+}
+
 /*
 * Navbar
 */
