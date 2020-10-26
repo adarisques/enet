@@ -8,7 +8,9 @@ window.addEventListener('load', function() {
         mounted () {
             axios
               .get('/api/alumni.json')
-              .then(response => (this.alumni = response.data))
+              .then(response => (this.alumni = response.data.sort(
+                  (a, b) => (a.lastname + ' ' + a.surname) > (b.lastname + ' ' + b.surname)
+              )))
         }
     });
 });
