@@ -1,5 +1,5 @@
-Vue.component('PromotionInput', {
-	data: function() {
+export default {
+	data () {
 		return {
 			years: Array.from((function*(start, stop) {
 			  for (var i = start; i < stop; i++) yield i;
@@ -15,13 +15,12 @@ Vue.component('PromotionInput', {
 	},
 	template: `
 		<div class="input-group">
-			<select class="form-control custom-select" v-model="value.year">
+			<select class="form-select" v-model="value.year">
 				<option v-for="year in years" v-bind:value="year">{{year}}</option>
 			</select>
-			<select class="form-control custom-select" v-model="value.major">
+			<select class="form-select" v-model="value.major">
 				<option v-for="major in majors" v-bind:value="major">{{major}}</option>
 			</select>
 		</div>
 	`
-})
-var defaultPromotion = { year: 2010, major: 'MRI' };
+}

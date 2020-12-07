@@ -1,4 +1,4 @@
-Vue.component('AlumniMinicard', {
+export default {
 	props: {
 		alumni: {
 			type: Object,
@@ -14,4 +14,4 @@ Vue.component('AlumniMinicard', {
 			</div>
 		</div>
 	`
-})
+}

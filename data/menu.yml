@@ -1,0 +1,44 @@
+- items:
+    -
+      title: Mon compte
+      icon: user-cog
+      slug: /mon-compte
+    -
+      title: L'AdA
+      icon: hands-helping
+      slug: /ada
+    -
+      title: Annuaire
+      icon: address-book
+      slug: /annuaire
+    -
+      title: Espace emploi
+      icon: briefcase
+      slug: /emplois
+    -
+      title: Événements
+      icon: calendar-alt
+      slug: /evenements
+
+- section: Gérer les anciens
+  items:
+    -
+      title: Validation
+      icon: user-check
+      slug: /alumni/validation
+    -
+      title: Adhésion
+      icon: comment-dollar
+      slug: /alumni/adhesion
+
+    
+- section : Gérer le CA
+  items:
+    -
+      title: Membres
+      icon: users
+      slug: /ca/membres
+    -
+      title: Rôles
+      icon: user-tag
+      slug: /ca/roles

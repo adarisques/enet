@@ -2,11 +2,12 @@
 <html lang="fr" class="h-100">
 {{ partial "head.html" . }}
 <body class="h-100 bg-light">
-    {{ partial "navbar.html" . }}
-        <div class="row">
-            {{ partial "sidebar.html" . }}
-               {{ .Page.Content }}
-        </div>
+	{{ partial "navbar.html" . }}
+	<div class="d-flex" id="kanzan-app">
+		{{ partial "sidebar.html" . }}
+		<router-view role="main" class="offset-md-2 col-md-9 px-4 mt-3">
+			{{ .Page.Content }}
+		</router-view>
    </div>
 </body>
 </html>

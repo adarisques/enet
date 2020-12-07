@@ -1,4 +1,4 @@
-Vue.component('EventCard', {
+export default {
 	props: {
 		event: {
 			type: Object,
@@ -6,7 +6,7 @@ Vue.component('EventCard', {
 		}
 	},
 	computed: {
-		image: function () {
+		image () {
 			switch(this.event.type) {
 				case 'afterwork': return '--aspect-ratio:16/9;background-image:url("/img/afterworks.jpg")';
 				case 'mon-rex': return '--aspect-ratio:16/9;background-image:url("/img/mon-rex.jpg")';
@@ -14,7 +14,7 @@ Vue.component('EventCard', {
 				default: return '';
 			}
 		},
-		date: function () {
+		date () {
 			var eventDate = new Date(this.event.date);
 			var dateOptions = {weekday: "short", year: "numeric", month: "short", day: "numeric"};
 			var timeOptions = {hour: "2-digit", minute: "2-digit"};
@@ -41,4 +41,4 @@ Vue.component('EventCard', {
 			</div>
 		</div>
 	`
-})
+}

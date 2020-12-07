@@ -1,53 +1,31 @@
 <nav class="d-none d-md-block sidebar shadow-sm">
 	<div class="sidebar-sticky d-flex flex-column">
+		{{- range sort $.Site.Data.menu -}}
+		{{- if .section -}}
+		<h6 class="sidebar-heading px-3 mt-4 mb-1 collapse show sidebar-text">{{ .section }}</h6>
+		{{- end -}}
 		<ul class="nav flex-column">
-			{{- range sort .Site.RegularPages -}}
+			{{ range sort .items }}
 			<li class="nav-item">
-				<a class="nav-link{{ if eq .RelPermalink $.RelPermalink }} active{{ end }}" href="{{ .RelPermalink }}">
-					<span class="fa fa-fw fa-lg fa-{{ .Param "icon" }}"></span>
-					{{ .Title }}
-				</a>
+				<router-link class="nav-link" to="{{ .slug | safeURL }}" title="{{ .title }}">
+					<span class="fa fa-fw fa-lg fa-{{ .icon }}"></span>
+					<span class="collapse show sidebar-text">{{ .title }}</span>
+				</router-link>
 			</li>
 			{{- end -}}
 		</ul>
+		{{- end -}}
 
-        <h6 class="sidebar-heading px-3 mt-4 mb-1">Gérer les anciens</h6>
-        <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="fa fa-fw fa-lg fa-user-check"></span>
-                    Validation
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="fa fa-fw fa-lg fa-comment-dollar"></span>
-                    Adhésion
-                </a>
-            </li>
-        </ul>
-
-        <h6 class="sidebar-heading px-3 mt-4 mb-1">Gérer le CA</h6>
-        <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="fa fa-fw fa-lg fa-users"></span>
-                    Membres
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <span class="fa fa-fw fa-lg fa-user-tag"></span>
-                    Rôles
-                </a>
-            </li>
-        </ul>
-
-        <ul class="nav flex-column mt-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
+        <ul class="nav flex-column mt-auto" id="sidebar-collapse">
+            <li class="nav-item collapse sidebar-text show">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".sidebar-text">
                     <span class="fa fa-fw fa-lg fa-angle-double-left"></span>
                     Réduire
+                </a>
+            </li>
+            <li class="nav-item collapse sidebar-text">
+                <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".sidebar-text" title="Agrandir">
+                    <span class="fa fa-fw fa-lg fa-angle-double-right"></span>
                 </a>
             </li>
         </ul>

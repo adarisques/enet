@@ -1,33 +1,33 @@
 ---
 title: Identification
 ---
-<div class="card col-12 col-md-9 col-lg-7 col-xl-6 mb-3">
-	<div class="card-header container-fluid text-center p-0">
+<div class="card col-12 col-md-9 col-lg-7 col-xl-6 mb-3 p-3">
+	<div class="card-header text-center p-0">
 		<img class="my-4" src="/img/logo.png" alt="AdA Risques" />
 		<div class="list-group list-group-horizontal h6 mx-1" id="tabs" role="tablist">
-			<a class="list-group-item list-group-item-action flex-fill active" data-toggle="list" href="#kanzan-signin" role="tab">J’ai déjà un compte AdA</a>
-			<a class="list-group-item list-group-item-action flex-fill" data-toggle="list" href="#kanzan-signon" role="tab">Je n’ai pas encore de compte</a>
+			<a class="list-group-item list-group-item-action flex-fill active" data-bs-toggle="tab" href="#kanzan-signin" role="tab">J’ai déjà un compte AdA</a>
+			<a class="list-group-item list-group-item-action flex-fill" data-bs-toggle="tab" href="#kanzan-signon" role="tab">Je n’ai pas encore de compte</a>
 		</div>
 	</div>
-	<div class="card-body tab-content" id="kanzan-app">
-		<form class="tab-pane active" id="kanzan-signin" role="tabpanel">
-			<div class="form-group">
+	<div class="card-body tab-content" id="kanzan-tabs">
+		<form class="tab-pane fade show active" id="kanzan-signin" role="tabpanel">
+			<div class="mb-3">
 				<label for="signin-email">Identifiant ou adresse mail</label>
 				<input type="email" id="signin-email" class="form-control" placeholder="prenom.nom ou adresse@mail.com" required autofocus>
 			</div>
-			<div class="form-group">
+			<div class="mb-3">
 				<label for="signin-password">Mot de passe</label>
 				<input type="password" id="signin-password" class="form-control" required>
 			</div>
-			<div class="form-group text-center">
+			<div class="mb-3 text-center">
 				<a class="btn btn-lg btn-primary" href="/mon-compte/" type="submit">Se connecter</a>
-				<a class="form-text" href="/lost-password/">Mot de passe oublié</a>
+				<a class="d-block form-text" href="/lost-password/">Mot de passe oublié</a>
 			</div>
-			<div class="form-group text-center">
+			<div class="mb-3 text-center">
 			</div>
 		</form>
-		<form class="tab-pane" id="kanzan-signon" role="tabpanel">
-			<div class="form-group form-row">
+		<form class="tab-pane fade" id="kanzan-signon" role="tabpanel">
+			<div class="mb-3 form-row">
 				<div class="col">
 					<label for="signon-firstname">Prénom</label>
 					<input type="email" id="signon-fFirstname" class="form-control" required autofocus>
@@ -37,37 +37,37 @@ title: Identification
 					<input type="password" id="signon-lastname" class="form-control" required>
 				</div>
 			</div>
-			<div class="form-group">
+			<div class="mb-3">
 				<label for="signon-email">Adresse mail</label>
 				<input type="email" id="signon-email" class="form-control" required autofocus>
 			</div>
-			<div class="form-group">
+			<div class="mb-3">
 				<label for="inputEmail">Promotion</label>
 				<promotion-input v-model="promotion"></promotion-input>
 			</div>
-			<div class="form-group">
-				<div class="custom-control custom-switch">
-					<input class="custom-control-input" type="checkbox" value="" id="mailing-alumni">
-					<label class="custom-control-label" for="mailing-alumni">
+			<div class="mb-3">
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" value="" id="mailing-alumni">
+					<label class="form-check-label" for="mailing-alumni">
 						J’accepte de recevoir quelques courriels d’information sur la vie de l’association ou de l’école (liste de diffusion <tt>alumni</tt>)
 					</label>
 				</div>
-				<div class="custom-control custom-switch">
-					<input class="custom-control-input" type="checkbox" value="" id="mailing-members">
-					<label class="custom-control-label" for="mailing-members">
+				<div class="form-check form-switch">
+					<input class="form-check-input" type="checkbox" value="" id="mailing-members">
+					<label class="form-check-label" for="mailing-members">
 						J’accepte de recevoir quelques courriels d’information réservés aux adhérents (liste de diffusion <tt>adherents</tt>)
 					</label>
 				</div>
 			</div>
-			<div class="form-group text-center">
+			<div class="mb-3 text-center">
 				<button class="btn btn-lg btn-outline-primary" type="submit">Créer mon compte</button>
-				<small class="form-text text-muted">Mon compte devra être validé par un administrateur de l’AdA avant utilisation.</small>
+				<small class="d-block form-text">Mon compte devra être validé par un administrateur de l’AdA avant utilisation.</small>
 			</div>
 		</form>
 	</div>
 </div>
 <nav class="navbar fixed-bottom navbar-light">
-	<a class="nav-link ml-auto" data-toggle="modal" data-target="#mentions-legales" href="#">Mentions légales</a>
+	<a class="nav-link ms-auto" data-bs-toggle="modal" data-bs-target="#mentions-legales" href="#">Mentions légales</a>
 </nav>
 
 <div class="modal fade" id="mentions-legales" tabindex="-1" role="dialog" aria-hidden="true">
@@ -75,9 +75,7 @@ title: Identification
 		<div class="modal-content">
 			<div class="modal-header">
 				<h5 class="modal-title" id="exampleModalLabel">Mentions légales</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
 			</div>
 			<div class="modal-body">
 				<section>
@@ -212,7 +210,7 @@ title: Identification
 				</section>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+				<button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
 			</div>
 		</div>
 	</div>
