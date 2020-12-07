@@ -4,9 +4,9 @@
 		"surname":"Pierre",
 		"lastname":"Auguste",
 		"promotion": {
-	        "year": 2020,
-	        "major": "CLV"
-	    }
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/avatars/01.jpg",

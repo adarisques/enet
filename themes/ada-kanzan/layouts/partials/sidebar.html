@@ -1,15 +1,15 @@
 <nav class="d-none d-md-block sidebar shadow-sm">
-    <div class="sidebar-sticky d-flex flex-column">
-        <ul class="nav flex-column">
-            {{- range sort .Site.RegularPages -}}
-            <li class="nav-item">
-                <a class="nav-link{{ if eq .RelPermalink $.RelPermalink }} active{{ end }}" href="{{ .RelPermalink }}">
-                    <span class="fa fa-fw fa-lg fa-{{ .Param "icon" }}"></span>
-                    {{ .Title }}
-                </a>
-            </li>
-            {{- end -}}
-        </ul>
+	<div class="sidebar-sticky d-flex flex-column">
+		<ul class="nav flex-column">
+			{{- range sort .Site.RegularPages -}}
+			<li class="nav-item">
+				<a class="nav-link{{ if eq .RelPermalink $.RelPermalink }} active{{ end }}" href="{{ .RelPermalink }}">
+					<span class="fa fa-fw fa-lg fa-{{ .Param "icon" }}"></span>
+					{{ .Title }}
+				</a>
+			</li>
+			{{- end -}}
+		</ul>
 
         <h6 class="sidebar-heading px-3 mt-4 mb-1">Gérer les anciens</h6>
         <ul class="nav flex-column mb-2">

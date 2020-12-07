@@ -3,12 +3,9 @@
 {{ partial "head.html" . }}
 <body class="h-100 bg-light">
     {{ partial "navbar.html" . }}
-    <div class="container">
         <div class="row">
             {{ partial "sidebar.html" . }}
-           <main role="main" class="col-md-9 ml-sm-auto col-lg-11 px-4 mt-3">
                {{ .Page.Content }}
-           </main>
         </div>
    </div>
 </body>

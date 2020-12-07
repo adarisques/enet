@@ -1,27 +1,27 @@
 [
-    {
-        "type": "afterwork",
-        "title": "After-work de rentrée via Teams",
-        "date": "2020-09-30T18:30+02:00",
-        "description": "Nous organisons un e-afterwork de rentrée afin de pouvoir se réunir et échanger avec vous sur vos attentes et vos envies !\nBref passez un bon moment entre anciens et réussir à vous proposer un agenda 2021 qui vous corresponde entièrement !",
-        "links": [
-            {
-                "href": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzU4ZDllMjAtMTdlNC00NDY0LTlhYWYtYjQ4NWNmODMzNzRi%40thread.v2/0?context=%7b%22Tid%22%3a%225115e0d3-03e3-4bd0-93c3-ea64eaf64346%22%2c%22Oid%22%3a%22954c69fe-cd47-44e9-90c2-b6c73e71433a%22%7d",
-                "text": "Lien de connexion"
-            }
+	{
+		"type": "afterwork",
+		"title": "After-work de rentrée via Teams",
+		"date": "2020-09-30T18:30+02:00",
+		"description": "Nous organisons un e-afterwork de rentrée afin de pouvoir se réunir et échanger avec vous sur vos attentes et vos envies !\nBref passez un bon moment entre anciens et réussir à vous proposer un agenda 2021 qui vous corresponde entièrement !",
+		"links": [
+			{
+				"href": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YzU4ZDllMjAtMTdlNC00NDY0LTlhYWYtYjQ4NWNmODMzNzRi%40thread.v2/0?context=%7b%22Tid%22%3a%225115e0d3-03e3-4bd0-93c3-ea64eaf64346%22%2c%22Oid%22%3a%22954c69fe-cd47-44e9-90c2-b6c73e71433a%22%7d",
+				"text": "Lien de connexion"
+			}
 
-        ]
-    },
-    {
-        "type": "noel",
-        "title": "After-work de Noël",
-        "date": "2020-12-23T18:30+01:00",
-        "description": "Petit papa Noël"
-    },
-    {
-        "type": "mon-rex",
-        "title": "Soirée Mon REX via Teams",
-        "date": "2020-11-15T18:30+01:00",
-        "description": "Dans cette session \"Mon REX\" (retour d'expérience), des anciens viennent partager leur parcours, conseils, expériences, suivi d'une petite série de questions."
-    }
+		]
+	},
+	{
+		"type": "noel",
+		"title": "After-work de Noël",
+		"date": "2020-12-23T18:30+01:00",
+		"description": "Petit papa Noël"
+	},
+	{
+		"type": "mon-rex",
+		"title": "Soirée Mon REX via Teams",
+		"date": "2020-11-15T18:30+01:00",
+		"description": "Dans cette session \"Mon REX\" (retour d'expérience), des anciens viennent partager leur parcours, conseils, expériences, suivi d'une petite série de questions."
+	}
 ]

@@ -2,218 +2,218 @@
 title: Identification
 ---
 <div class="card col-12 col-md-9 col-lg-7 col-xl-6 mb-3">
-    <div class="card-header container-fluid text-center p-0">
-        <img class="my-4" src="/img/logo.png" alt="AdA Risques" />
-        <div class="list-group list-group-horizontal h6 mx-1" id="tabs" role="tablist">
-            <a class="list-group-item list-group-item-action flex-fill active" data-toggle="list" href="#kanzan-signin" role="tab">J’ai déjà un compte AdA</a>
-            <a class="list-group-item list-group-item-action flex-fill" data-toggle="list" href="#kanzan-signon" role="tab">Je n’ai pas encore de compte</a>
-        </div>
-    </div>
-    <div class="card-body tab-content" id="kanzan-app">
-        <form class="tab-pane active" id="kanzan-signin" role="tabpanel">
-            <div class="form-group">
-                <label for="signin-email">Identifiant ou adresse mail</label>
-                <input type="email" id="signin-email" class="form-control" placeholder="prenom.nom ou adresse@mail.com" required autofocus>
-            </div>
-            <div class="form-group">
-                <label for="signin-password">Mot de passe</label>
-                <input type="password" id="signin-password" class="form-control" required>
-            </div>
-            <div class="form-group text-center">
-                <a class="btn btn-lg btn-primary" href="/mon-compte/" type="submit">Se connecter</a>
-                <a class="form-text" href="/lost-password/">Mot de passe oublié</a>
-            </div>
-            <div class="form-group text-center">
-            </div>
-        </form>
-        <form class="tab-pane" id="kanzan-signon" role="tabpanel">
-            <div class="form-group form-row">
-                <div class="col">
-                    <label for="signon-firstname">Prénom</label>
-                    <input type="email" id="signon-fFirstname" class="form-control" required autofocus>
-                </div>
-                <div class="col">
-                    <label for="signon-lastname">Nom</label>
-                    <input type="password" id="signon-lastname" class="form-control" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="signon-email">Adresse mail</label>
-                <input type="email" id="signon-email" class="form-control" required autofocus>
-            </div>
-            <div class="form-group">
-                <label for="inputEmail">Promotion</label>
-                <promotion-input v-model="promotion"></promotion-input>
-            </div>
-            <div class="form-group">
-                <div class="custom-control custom-switch">
-                    <input class="custom-control-input" type="checkbox" value="" id="mailing-alumni">
-                    <label class="custom-control-label" for="mailing-alumni">
-                        J’accepte de recevoir quelques courriels d’information sur la vie de l’association ou de l’école (liste de diffusion <tt>alumni</tt>)
-                    </label>
-                </div>
-                <div class="custom-control custom-switch">
-                    <input class="custom-control-input" type="checkbox" value="" id="mailing-members">
-                    <label class="custom-control-label" for="mailing-members">
-                        J’accepte de recevoir quelques courriels d’information réservés aux adhérents (liste de diffusion <tt>adherents</tt>)
-                    </label>
-                </div>
-            </div>
-            <div class="form-group text-center">
-                <button class="btn btn-lg btn-outline-primary" type="submit">Créer mon compte</button>
-                <small class="form-text text-muted">Mon compte devra être validé par un administrateur de l’AdA avant utilisation.</small>
-            </div>
-        </form>
-    </div>
+	<div class="card-header container-fluid text-center p-0">
+		<img class="my-4" src="/img/logo.png" alt="AdA Risques" />
+		<div class="list-group list-group-horizontal h6 mx-1" id="tabs" role="tablist">
+			<a class="list-group-item list-group-item-action flex-fill active" data-toggle="list" href="#kanzan-signin" role="tab">J’ai déjà un compte AdA</a>
+			<a class="list-group-item list-group-item-action flex-fill" data-toggle="list" href="#kanzan-signon" role="tab">Je n’ai pas encore de compte</a>
+		</div>
+	</div>
+	<div class="card-body tab-content" id="kanzan-app">
+		<form class="tab-pane active" id="kanzan-signin" role="tabpanel">
+			<div class="form-group">
+				<label for="signin-email">Identifiant ou adresse mail</label>
+				<input type="email" id="signin-email" class="form-control" placeholder="prenom.nom ou adresse@mail.com" required autofocus>
+			</div>
+			<div class="form-group">
+				<label for="signin-password">Mot de passe</label>
+				<input type="password" id="signin-password" class="form-control" required>
+			</div>
+			<div class="form-group text-center">
+				<a class="btn btn-lg btn-primary" href="/mon-compte/" type="submit">Se connecter</a>
+				<a class="form-text" href="/lost-password/">Mot de passe oublié</a>
+			</div>
+			<div class="form-group text-center">
+			</div>
+		</form>
+		<form class="tab-pane" id="kanzan-signon" role="tabpanel">
+			<div class="form-group form-row">
+				<div class="col">
+					<label for="signon-firstname">Prénom</label>
+					<input type="email" id="signon-fFirstname" class="form-control" required autofocus>
+				</div>
+				<div class="col">
+					<label for="signon-lastname">Nom</label>
+					<input type="password" id="signon-lastname" class="form-control" required>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="signon-email">Adresse mail</label>
+				<input type="email" id="signon-email" class="form-control" required autofocus>
+			</div>
+			<div class="form-group">
+				<label for="inputEmail">Promotion</label>
+				<promotion-input v-model="promotion"></promotion-input>
+			</div>
+			<div class="form-group">
+				<div class="custom-control custom-switch">
+					<input class="custom-control-input" type="checkbox" value="" id="mailing-alumni">
+					<label class="custom-control-label" for="mailing-alumni">
+						J’accepte de recevoir quelques courriels d’information sur la vie de l’association ou de l’école (liste de diffusion <tt>alumni</tt>)
+					</label>
+				</div>
+				<div class="custom-control custom-switch">
+					<input class="custom-control-input" type="checkbox" value="" id="mailing-members">
+					<label class="custom-control-label" for="mailing-members">
+						J’accepte de recevoir quelques courriels d’information réservés aux adhérents (liste de diffusion <tt>adherents</tt>)
+					</label>
+				</div>
+			</div>
+			<div class="form-group text-center">
+				<button class="btn btn-lg btn-outline-primary" type="submit">Créer mon compte</button>
+				<small class="form-text text-muted">Mon compte devra être validé par un administrateur de l’AdA avant utilisation.</small>
+			</div>
+		</form>
+	</div>
 </div>
 <nav class="navbar fixed-bottom navbar-light">
-    <a class="nav-link ml-auto" data-toggle="modal" data-target="#mentions-legales" href="#">Mentions légales</a>
+	<a class="nav-link ml-auto" data-toggle="modal" data-target="#mentions-legales" href="#">Mentions légales</a>
 </nav>
 
 <div class="modal fade" id="mentions-legales" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Mentions légales</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <section>
-                    <h5>Présentation</h5>
-                    <p>
-                        L’application <span class="app-name">e<b>net</b></span> est un
-                        service en ligne proposé aux membres de l’<i>Association des alumni
-                        en maîtrise des risques</i> (AdA Risques), quel que soit leur statut d’adhésion.
-                    </p>
-                </section>
+	<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Mentions légales</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<section>
+					<h5>Présentation</h5>
+					<p>
+						L’application <span class="app-name">e<b>net</b></span> est un
+						service en ligne proposé aux membres de l’<i>Association des alumni
+						en maîtrise des risques</i> (AdA Risques), quel que soit leur statut d’adhésion.
+					</p>
+				</section>
 
-                <section>
-                    <h5>Éditeur</h5>
-                    <p>
-                        <i>Association des anciens de l’ENSI de Bourges, de l’École Hubert
-                        Curien et des départements MRI, STI et ERE de l’INSA Centre Val de
-                        Loire</i>
-                        dite <i>Association des alumni en maîtrise des risques</i>
-                    </p>
-                    <p>
-                        Association régie par la loi du 1<sup>er</sup> juillet 1901
-                        sans but lucratif, exonérée de TVA<br/>
-                        N° SIREN : 482 426 574 - N° RNA : W181000637
-                    </p>
-                    <h6>Siège social</h6>
-                    <p>88 boulevard Lahitolle, 18020 Bourges Cedex</p>
-                    <h6>Directeur de la publication</h6>
-                    <p>M. Xxxx Xxxx, en qualité de président</p>
-                </section>
+				<section>
+					<h5>Éditeur</h5>
+					<p>
+						<i>Association des anciens de l’ENSI de Bourges, de l’École Hubert
+						Curien et des départements MRI, STI et ERE de l’INSA Centre Val de
+						Loire</i>
+						dite <i>Association des alumni en maîtrise des risques</i>
+					</p>
+					<p>
+						Association régie par la loi du 1<sup>er</sup> juillet 1901
+						sans but lucratif, exonérée de TVA<br/>
+						N° SIREN : 482 426 574 - N° RNA : W181000637
+					</p>
+					<h6>Siège social</h6>
+					<p>88 boulevard Lahitolle, 18020 Bourges Cedex</p>
+					<h6>Directeur de la publication</h6>
+					<p>M. Xxxx Xxxx, en qualité de président</p>
+				</section>
 
-                <section>
-                    <h5>Hébergeur</h5>
-                    <p>
-                        OVH SAS, 2 rue Kellermann, 59100 Roubaix, France
-                        (<a href="http://www.ovh.com/fr/support/documents_legaux/" target="_blank">coordonnées complètes</a>)
-                    </p>
-                </section>
+				<section>
+					<h5>Hébergeur</h5>
+					<p>
+						OVH SAS, 2 rue Kellermann, 59100 Roubaix, France
+						(<a href="http://www.ovh.com/fr/support/documents_legaux/" target="_blank">coordonnées complètes</a>)
+					</p>
+				</section>
 
-                <section>
-                <h5>Données personnelles</h5>
-                    <p>
-                        Ce service constitue un traitement de données à caractère personnel
-                        mis en œuvre par l’AdA Risques, nécessaire aux fins des intérêts légitimes
-                        qu’elle poursuis (exécution de l’objet de l’association) ou pour
-                        lequel les personnes concernées ont consenties, au sens des a) et f)
-                        de l’article 6 du règlement général (UE) 2016/679 du Parlement
-                        européen et du Conseil du 27 avril 2016 (Règlement général sur la protection des
-                        données - RGPD).
-                    </p>
-                    <p>
-                        L’AdA Risques s’engage à traiter vos données à caractère personnel
-                        dans le respect de la loi n°78-17 du 6 janvier 1978 modifiée
-                        relative à l’informatique, aux fichiers et aux libertés et du RGPD.
-                    </p>
-                    <h6>Catégories de données à caractère personnel et durées de conservation</h6>
-                    <ul>
-                        <li>Données relatives à l’<b>identité</b> des membres (nom, prénom, filière et année de promotion) : sans limitation de durée ;</li>
-                        <li>Données permettant la connexion (adresse de courrier électronique et mot de passe) :
-                            5 ans après la clotûre du dernier exercice d'adhésion ;</li>
-                        <li>Données produites par l’utilisateur ou sous sa responsabilité et concernant sa <b>fiche contact</b> : 2 ans après la clotûre du dernier exercice d'adhésion ;</li>
-                        <li>Données produites par l’utilisateur concernant des <b>offres d'emploi</b> (ou de stages) : 6 mois ;</li>
-                        <li>Journaux de connexion (adresses IP et identification du compte utilisé) : 12 mois.</li>
-                    </ul>
-                    <h6>Catégories de destinataires des données à caractère personnel</h6>
-                    <ul>
-                        <li>Administrateurs système habilités par le Président de l'AdA Risques ;</li>
-                        <li>Administrateurs fonctionnels, membres du Conseil d'administration de l'AdA Risques ;</li>
-                        <li>Utilisateur identifié, pour ses propres données ;</li>
-                        <li>Autres utilisateurs identifiés, pour l’identité, la fiche contact et les offres d'emploi ;</li>
-                        <li><a href="https://alumni.insa-cvl.fr/" target="_blank">INSA Alumni Centre Val de Loire</a>, pour l’identité et la fiche contact, en cas de double adhésion ;</li>
-                        <li><a href="https://www.iesf.fr/" target="_blank">Ingénieurs et Scientifiques de France</a>, pour l’identité ;</li>
-                        <li>Grand public, pour l'identité des membres du Conseil d'administration.</li>
-                    </ul>
-                    <h6>Exercice des droits</h6>
-                    <p>
-                        Vous pouvez accéder aux données vous concernant et exercer vos
-                        droits d’accès, de rectification, de limitation, d’opposition que
-                        vous tenez des articles 15, 16, 18 et 21 du RGPD, directement depuis
-                        l'application ou par courriel auprès du bureau de l'association
-                        (<a href="mailto:contact@ada-risques.fr">contact<i class="fa fa-sm fa-at"></i>ada-risques.fr</a>).
-                    </p>
-                </section>
+				<section>
+				<h5>Données personnelles</h5>
+					<p>
+						Ce service constitue un traitement de données à caractère personnel
+						mis en œuvre par l’AdA Risques, nécessaire aux fins des intérêts légitimes
+						qu’elle poursuis (exécution de l’objet de l’association) ou pour
+						lequel les personnes concernées ont consenties, au sens des a) et f)
+						de l’article 6 du règlement général (UE) 2016/679 du Parlement
+						européen et du Conseil du 27 avril 2016 (Règlement général sur la protection des
+						données - RGPD).
+					</p>
+					<p>
+						L’AdA Risques s’engage à traiter vos données à caractère personnel
+						dans le respect de la loi n°78-17 du 6 janvier 1978 modifiée
+						relative à l’informatique, aux fichiers et aux libertés et du RGPD.
+					</p>
+					<h6>Catégories de données à caractère personnel et durées de conservation</h6>
+					<ul>
+						<li>Données relatives à l’<b>identité</b> des membres (nom, prénom, filière et année de promotion) : sans limitation de durée ;</li>
+						<li>Données permettant la connexion (adresse de courrier électronique et mot de passe) :
+							5 ans après la clotûre du dernier exercice d'adhésion ;</li>
+						<li>Données produites par l’utilisateur ou sous sa responsabilité et concernant sa <b>fiche contact</b> : 2 ans après la clotûre du dernier exercice d'adhésion ;</li>
+						<li>Données produites par l’utilisateur concernant des <b>offres d'emploi</b> (ou de stages) : 6 mois ;</li>
+						<li>Journaux de connexion (adresses IP et identification du compte utilisé) : 12 mois.</li>
+					</ul>
+					<h6>Catégories de destinataires des données à caractère personnel</h6>
+					<ul>
+						<li>Administrateurs système habilités par le Président de l'AdA Risques ;</li>
+						<li>Administrateurs fonctionnels, membres du Conseil d'administration de l'AdA Risques ;</li>
+						<li>Utilisateur identifié, pour ses propres données ;</li>
+						<li>Autres utilisateurs identifiés, pour l’identité, la fiche contact et les offres d'emploi ;</li>
+						<li><a href="https://alumni.insa-cvl.fr/" target="_blank">INSA Alumni Centre Val de Loire</a>, pour l’identité et la fiche contact, en cas de double adhésion ;</li>
+						<li><a href="https://www.iesf.fr/" target="_blank">Ingénieurs et Scientifiques de France</a>, pour l’identité ;</li>
+						<li>Grand public, pour l'identité des membres du Conseil d'administration.</li>
+					</ul>
+					<h6>Exercice des droits</h6>
+					<p>
+						Vous pouvez accéder aux données vous concernant et exercer vos
+						droits d’accès, de rectification, de limitation, d’opposition que
+						vous tenez des articles 15, 16, 18 et 21 du RGPD, directement depuis
+						l'application ou par courriel auprès du bureau de l'association
+						(<a href="mailto:contact@ada-risques.fr">contact<i class="fa fa-sm fa-at"></i>ada-risques.fr</a>).
+					</p>
+				</section>
 
-                <section>
-                    <h5>Crédits</h5>
-                    <p>Les images de fond et illustrations sont libres de droit et fournies par
-                        <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a> :<p>
-                    </p>
-                    <h6>Images de fond</h6>
-                    <ul>
-                        <li>
-                            <a href="https://unsplash.com/photos/McsNra2VRQQ" target="_blank"><i>pink flowers photo</i></a> par
-                            <a href="https://unsplash.com/@ajny?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">AJ</a>
-                        </li>
-                        <li>
-                            <a href="https://unsplash.com/photos/_SbeCWYjwCQ" target="_blank"><i>pink cherry blossom flower photo</i></a> par
-                            <a href="https://unsplash.com/@gaspanik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Masaaki Komori</a>
-                        </li>
-                        <li>
-                            <a href="https://unsplash.com/photos/7TzQ7l3lDAY" target="_blank"><i>worm's eye view photography of pink cheery blossom tree photo</i></a> par
-                            <a href="https://unsplash.com/@hngstrm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Henry &amp; Co.</a>
-                        </li>
-                        <li>
-                            <a href="https://unsplash.com/photos/YLDdL6c9Qms" target="_blank"><i>pink flowers photo</i></a> par
-                            <a href="https://unsplash.com/@zhenhu2424?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Zhen Hu</a>
-                        </li>
-                    </ul>
-                    <h6>Avatar par défaut</h6>
-                    <p>
-                        Basé sur
-                        <a href="https://unsplash.com/photos/-Qs0whA-Mkk" target="_blank"><i>brown butterfly on flowering tree photo</i></a> par
-                        <a href="https://unsplash.com/@shkazemi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Seyedeh Hamideh Kazemi</a>
-                    </p>
-                    <h6>Illustrations des événements</h6>
-                    <ul>
-                        <li>
-                            <a href="https://unsplash.com/photos/NHzMcZog6u8" target="_blank"><i>clear drinking glass filled with liquid photo</i></a> par
-                            <a href="https://unsplash.com/@kvnhikari?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Kévin Hikari</a>
-                        </li>
-                        <li>
-                            <a href="https://unsplash.com/photos/-8ZESyFapTk" target="_blank"><i>man sitting on brown wall photo</i></a> par
-                            <a href="https://unsplash.com/@awesome?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Ashes Sitoula</a>
-                        </li>
-                        <li>
-                            <a href="https://unsplash.com/photos/2qzZubxw7WE" target="_blank"><i>man wearing Santa Claus costume sitting on chair photo</i></a> par
-                            <a href="https://unsplash.com/@hue12_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">hue12 photography</a>
-                        </li>
-                    </ul>
-                    
+				<section>
+					<h5>Crédits</h5>
+					<p>Les images de fond et illustrations sont libres de droit et fournies par
+						<a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a> :<p>
+					</p>
+					<h6>Images de fond</h6>
+					<ul>
+						<li>
+							<a href="https://unsplash.com/photos/McsNra2VRQQ" target="_blank"><i>pink flowers photo</i></a> par
+							<a href="https://unsplash.com/@ajny?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">AJ</a>
+						</li>
+						<li>
+							<a href="https://unsplash.com/photos/_SbeCWYjwCQ" target="_blank"><i>pink cherry blossom flower photo</i></a> par
+							<a href="https://unsplash.com/@gaspanik?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Masaaki Komori</a>
+						</li>
+						<li>
+							<a href="https://unsplash.com/photos/7TzQ7l3lDAY" target="_blank"><i>worm's eye view photography of pink cheery blossom tree photo</i></a> par
+							<a href="https://unsplash.com/@hngstrm?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Henry &amp; Co.</a>
+						</li>
+						<li>
+							<a href="https://unsplash.com/photos/YLDdL6c9Qms" target="_blank"><i>pink flowers photo</i></a> par
+							<a href="https://unsplash.com/@zhenhu2424?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Zhen Hu</a>
+						</li>
+					</ul>
+					<h6>Avatar par défaut</h6>
+					<p>
+						Basé sur
+						<a href="https://unsplash.com/photos/-Qs0whA-Mkk" target="_blank"><i>brown butterfly on flowering tree photo</i></a> par
+						<a href="https://unsplash.com/@shkazemi?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Seyedeh Hamideh Kazemi</a>
+					</p>
+					<h6>Illustrations des événements</h6>
+					<ul>
+						<li>
+							<a href="https://unsplash.com/photos/NHzMcZog6u8" target="_blank"><i>clear drinking glass filled with liquid photo</i></a> par
+							<a href="https://unsplash.com/@kvnhikari?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Kévin Hikari</a>
+						</li>
+						<li>
+							<a href="https://unsplash.com/photos/-8ZESyFapTk" target="_blank"><i>man sitting on brown wall photo</i></a> par
+							<a href="https://unsplash.com/@awesome?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Ashes Sitoula</a>
+						</li>
+						<li>
+							<a href="https://unsplash.com/photos/2qzZubxw7WE" target="_blank"><i>man wearing Santa Claus costume sitting on chair photo</i></a> par
+							<a href="https://unsplash.com/@hue12_photography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">hue12 photography</a>
+						</li>
+					</ul>
+					
 
-                    </p>
-                </section>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
-            </div>
-        </div>
-    </div>
+					</p>
+				</section>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" data-dismiss="modal">Fermer</button>
+			</div>
+		</div>
+	</div>
 </div>
