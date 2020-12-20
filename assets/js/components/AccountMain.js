@@ -32,17 +32,11 @@ export default {
 
 		<section class="mb-4">
 			<h5>Mes informations</h5>
-			<div class="card-group">
-				<div class="card">
-					<div class="card-body">
-						<span class="badge rounded-pill border border-success bg-white text-success"><i class="fa fa-sm fa-check"></i> Adhérent</span>
-						<span class="badge rounded-pill border border-warning bg-warning text-dark">Non-adhérent</span>
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-body">
-						adresse@mail.com
-					</div>
+			<div class="card">
+				<div class="card-body">
+					<span class="badge rounded-pill border border-success bg-white text-success" v-if="alumni.membership"><i class="fa fa-sm fa-check"></i> Adhérent</span>
+					<span class="badge rounded-pill border border-warning bg-warning text-dark" v-else>Non-adhérent</span>
+					{{ alumni.email }}
 				</div>
 			</div>
 		</section>
