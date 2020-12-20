@@ -1,4 +1,4 @@
-<nav class="d-none d-md-block sidebar shadow-sm">
+<nav class="collapse kanzan-collapse d-md-block sidebar shadow-sm" id="sidebar">
 	<div class="sidebar-sticky d-flex flex-column">
 		{{- range sort $.Site.Data.menu -}}
 		{{- if .section -}}
@@ -9,14 +9,14 @@
 			<li class="nav-item">
 				<router-link class="nav-link" to="{{ .slug | safeURL }}" title="{{ .title }}">
 					<span class="fa fa-fw fa-lg fa-{{ .icon }}"></span>
-					<span class="collapse show sidebar-text">{{ .title }}</span>
+					<span class="collapse show sidebar-text pe-4">{{ .title }}</span>
 				</router-link>
 			</li>
 			{{- end -}}
 		</ul>
 		{{- end -}}
 
-        <ul class="nav flex-column mt-auto" id="sidebar-collapse">
+        <ul class="nav flex-column mt-auto d-none d-md-block" id="sidebar-collapse">
             <li class="nav-item collapse sidebar-text show">
                 <a class="nav-link" href="#" data-bs-toggle="collapse" data-bs-target=".sidebar-text">
                     <span class="fa fa-fw fa-lg fa-angle-double-left"></span>

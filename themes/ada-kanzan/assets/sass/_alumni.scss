@@ -4,11 +4,15 @@
 
 .alumni-vcard {
     display: grid;
-    grid-auto-flow: row;
+    grid-template-rows: auto 1fr;
     grid-template-columns: 128px 1fr;
     grid-gap: 1em;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 576px) {
+        grid-template-columns: 196px 1fr;
+    }
+
+    @media (min-width: 992px) {
         grid-template-columns: 256px 1fr;
     }
 }
@@ -17,20 +21,35 @@
     grid-row: 1;
     max-width: 128px;
 
-    @media (min-width: 1200px) {
-        max-width: 256px;
+    @media (min-width: 576px) {
+        max-width: 196px;
         grid-row: 1 / span 2;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 256px;
     }
 }
 
 .alumni-contacts {
     grid-column: 1 / span 2;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 576px) {
         grid-column: 2;
     }
 
     li:hover {
         background-color: rgba($ada-light-purple, 0.2);
+    }
+}
+
+.alumni-minicard {
+    .alumni-identity {
+        font-family: $title-font;
+        line-height: 1.2;
+
+        @media (min-width: 1200px) {
+            font-size: 1rem;
+        }
     }
 }
