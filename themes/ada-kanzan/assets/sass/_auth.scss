@@ -1,0 +1,56 @@
+/*
+* Page de connexion
+*/
+
+body.bg-ada {
+    background-image:
+        linear-gradient(to bottom right, rgba(white, 0.3), rgba(white, 0.5)),
+        url('/img/backgrounds/aj-McsNra2VRQQ-unsplash.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+
+    .card {
+        position: relative;
+        z-index: 1;
+        background: inherit;
+        border-color: rgba(white, .5);
+        box-shadow: 0 0 1rem 0 rgba(black, .2);
+
+        &:before {
+            content: "";
+            position: absolute;
+            background: inherit;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            box-shadow: inset 0 0 0 300px rgba(white, .75);
+            filter: blur(2px);
+            margin: -1px;
+        }
+    }
+
+    .card-header {
+        border-bottom: 0.25rem $ada-med-blue solid;
+        background-color: transparent;
+ 
+        .list-group-item {
+            border-color: $ada-med-blue;
+            border-bottom-width: 0;
+            font-size: 0.9rem;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+
+            &.active {
+                color: $ada-med-blue;
+                background: linear-gradient(to right, #b299cc, #c5b2d8);
+            }
+        }
+    }
+}

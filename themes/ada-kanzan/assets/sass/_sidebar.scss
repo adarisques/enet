@@ -1,0 +1,56 @@
+/*
+* Sidebar
+*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(black, .1);
+    background: linear-gradient(to right, #d8cce5, #ebe5f2);
+    
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+}
+
+.sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    scrollbar-width: thin;
+    
+    @supports ((position: -webkit-sticky) or (position: sticky)) {
+        position: -webkit-sticky;
+        position: sticky;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        color: $ada-light-purple;
+        white-space: nowrap;
+    
+        &.active {
+            font-weight: 800;
+            border-left: 0.25rem $ada-med-blue solid;
+            padding-left: 0.75rem;
+        }
+    
+        &.active, &:hover {
+            color: $ada-med-blue;
+            background: linear-gradient(to right, rgba($ada-med-purple, 0.15), rgba($ada-med-purple, 0.07));
+        }
+    }
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+    color: $ada-deep-purle;
+}

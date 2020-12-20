@@ -1,0 +1,36 @@
+/*
+* Fiche contact alumni
+*/
+
+.alumni-vcard {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 128px 1fr;
+    grid-gap: 1em;
+
+    @media (min-width: 1200px) {
+        grid-template-columns: 256px 1fr;
+    }
+}
+
+.alumni-avatar {
+    grid-row: 1;
+    max-width: 128px;
+
+    @media (min-width: 1200px) {
+        max-width: 256px;
+        grid-row: 1 / span 2;
+    }
+}
+
+.alumni-contacts {
+    grid-column: 1 / span 2;
+
+    @media (min-width: 1200px) {
+        grid-column: 2;
+    }
+
+    li:hover {
+        background-color: rgba($ada-light-purple, 0.2);
+    }
+}

@@ -1,0 +1,21 @@
+/*
+* Evénements
+*/
+
+.event-card {
+    .card-img-top {
+        overflow: hidden;
+        height: 0;
+        padding-bottom: calc(100% / 2.35);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .card-subtitle * {
+        display: inline-block;
+
+        &::first-letter {
+            text-transform: capitalize;
+        }
+    }
+}
