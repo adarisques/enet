@@ -6,9 +6,11 @@
 		"year": 2020,
 		"major": "CLV"
 	},
+	"email": "adresse@mail.com",
+	"membership": false,
 	"social": [
 		{
-			"type": "mail",
+			"type": "email",
 			"value": "adresse@mail.com"
 		},
 		{
