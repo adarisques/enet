@@ -19,7 +19,7 @@ export default {
 	template: `
 		<main>
 			<section class="mb-4" id="kanzan-evenements">
-				<div class="row row-cols-2" id="events-list">
+				<div class="row row-cols-1 row-cols-sm-2" id="events-list">
 					<event-card class="col mb-4" v-for="event in events" v-bind:key="event.date" v-bind:event="event"></event-card>
 				</div>
 			</section>

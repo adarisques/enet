@@ -43,7 +43,7 @@ export default {
 				</form>
 			</div>
 
-			<div class="row row-cols-3 row-cols-lg-5" id="alumni-directory" v-if="alumni">
+			<div class="row row-cols-3 row-cols-lg-5 alumni-directory" v-if="alumni">
 				<alumni-minicard class="col mb-4" v-for="person in alumni" v-bind:key="person.username" v-bind:alumni="person"></alumni-minicard>
 			</div>
 
