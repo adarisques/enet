@@ -26,16 +26,18 @@ export default {
 	<main>
 		<section class="mb-4">
 			<h5>Rechercher un alumni</h5>
-			<form>
-				<div class="form-group" id="kanzan-alumni-search">
-					<div class="input-group flex-nowrap">
-						<input type="text" class="form-control" id="search-name" placeholder="Nom, prénom, information de la fiche contact...">
-						<button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
-					</div>
+			<form class="form-group mb-4">
+				<div class="input-group flex-nowrap">
+					<input type="text" class="form-control" v-model="search" placeholder="Nom, prénom, information de la fiche contact...">
+					<button class="btn btn-outline-secondary" type="button"><i class="fa fa-search"></i></button>
 				</div>
 			</form>
+			
+			<div class="row row-cols-3 row-cols-lg-5 alumni-directory" v-if="results">
+				<alumni-minicard class="col mb-4" v-for="person in results" v-bind:key="person.username" v-bind:alumni="person"></alumni-minicard>
+			</div>
 		</section>
-		<section class="mb-4" id="kanzan-annuaire">
+		<section class="mb-4">
 			<div class="d-md-flex justify-content-between align-items-baseline mb-4">
 				<h5>Annuaire par promotion</h5>
 				<form class="form-inline">
