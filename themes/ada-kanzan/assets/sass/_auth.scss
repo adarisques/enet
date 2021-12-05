@@ -39,13 +39,17 @@ body.bg-ada {
     .card-header {
         border-bottom: 0.25rem $ada-med-blue solid;
         background-color: transparent;
- 
+
         .list-group-item {
             border-color: $ada-med-blue;
             border-bottom-width: 0;
             font-size: 0.9rem;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
 
             &.active {
                 color: $ada-med-blue;

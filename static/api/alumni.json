@@ -11,96 +11,172 @@
 	{
 		"avatar":"/img/avatars/01.jpg",
 		"surname":"Juliette",
-		"lastname":"Baptiste"
+		"lastname":"Baptiste",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/avatars/02.jpg",
 		"surname":"Hector",
-		"lastname":"Charles"
+		"lastname":"Charles",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Alice",
-		"lastname":"Dupont"
+		"lastname":"Dupont",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Justin",
-		"lastname":"Ernest"
+		"lastname":"Ernest",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/avatars/03.jpg",
 		"surname":"Elodie",
-		"lastname":"Felix"
+		"lastname":"Felix",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Bastien",
-		"lastname":"Gustave"
+		"lastname":"Gustave",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Armant",
-		"lastname":"Henry"
+		"lastname":"Henry",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/avatars/04.jpg",
 		"surname":"Bénédicte",
-		"lastname":"Isabelle"
+		"lastname":"Isabelle",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Alexandre",
-		"lastname":"Jacques"
+		"lastname":"Jacques",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Elliot",
-		"lastname":"Kim"
+		"lastname":"Kim",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/avatars/05.jpg",
 		"surname":"Camille",
-		"lastname":"Lissandre"
+		"lastname":"Lissandre",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Nicolas",
-		"lastname":"Michel"
+		"lastname":"Michel",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Martin",
-		"lastname":"Nathan"
+		"lastname":"Nathan",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Patrice",
-		"lastname":"Ophélie"
+		"lastname":"Ophélie",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/avatars/06.jpg",
 		"surname":"Marie",
-		"lastname":"Patricia"
+		"lastname":"Patricia",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Martin",
-		"lastname":"Quentin"
+		"lastname":"Quentin",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Paul",
-		"lastname":"Richard"
+		"lastname":"Richard",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/avatars/07.jpg",
 		"surname":"Jean",
-		"lastname":"Séraphin"
+		"lastname":"Séraphin",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	},
 	{
 		"avatar":"/img/default-avatar.jpg",
 		"surname":"Fabrice",
-		"lastname":"Théodore"
+		"lastname":"Théodore",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
 	}
 ]

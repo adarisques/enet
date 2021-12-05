@@ -8,7 +8,7 @@
 			{{ range sort .items }}
 			<li class="nav-item">
 				<router-link class="nav-link" to="{{ .slug | safeURL }}" title="{{ .title }}">
-					<span class="fa fa-fw fa-lg fa-{{ .icon }}"></span>
+					<span class="fa fa-fw fa-lg fa-{{ .icon }} me-2"></span>
 					<span class="collapse show sidebar-text pe-4">{{ .title }}</span>
 				</router-link>
 			</li>

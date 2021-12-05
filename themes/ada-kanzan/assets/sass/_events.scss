@@ -3,12 +3,18 @@
 */
 
 .event-card {
+    margin-bottom: 1.5em;
+
     .card-img-top {
         overflow: hidden;
-        height: 0;
-        padding-bottom: calc(100% / 2.35);
-        background-size: cover;
-        background-position: center center;
+
+        .img {
+            height: 0;
+            padding-bottom: calc(100% / 2.35);
+            background-size: cover;
+            background-position: center center;
+            background-image: var(--bg-image);
+        }
     }
 
     .card-subtitle * {
@@ -16,6 +22,20 @@
 
         &::first-letter {
             text-transform: capitalize;
+        }
+    }
+}
+
+.event-past {
+    overflow: hidden;
+    
+    .card-img-top {
+        
+        .img {
+            --blur: 2px;
+            margin: calc(-1 * var(--blur));
+            padding-bottom: calc(100% / 2.35 + 2 * var(--blur));
+            filter: grayscale(100%) blur(var(--blur)) brightness(80%);
         }
     }
 }

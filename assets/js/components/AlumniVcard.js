@@ -3,7 +3,12 @@ export default {
 		alumni: {
 			type: Object,
 			required: true,
-		}
+		},
+		editable: {
+			type: Boolean,
+			required: false,
+			default: false,
+		},
 	},
 	methods: {
 		faIcon (contact) {
@@ -43,7 +48,7 @@ export default {
 						<span>{{ contact.value }}</span>
 						<a class="ms-auto stretched-link" href="#"><i class="fa fa-fw fa-edit small"></i></a>
 					</li>
-					<li class="d-flex position-relative mb-1 text-muted">
+					<li v-if="editable" class="d-flex position-relative mb-1 text-muted">
 						<a class="stretched-link text-muted" href="#"><i class="fa fa-fw fa-plus-square mr-1"></i></a>
 						<span>Ajouter une information</span>
 					</li>

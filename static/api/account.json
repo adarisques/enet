@@ -7,7 +7,11 @@
 		"major": "CLV"
 	},
 	"email": "adresse@mail.com",
-	"membership": false,
+	"membership": true,
+	"mailing": {
+		"alumni": false,
+		"members": true
+	},
 	"social": [
 		{
 			"type": "email",

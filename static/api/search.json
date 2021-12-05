@@ -1,0 +1,65 @@
+[
+	{
+		"avatar":"/img/avatars/03.jpg",
+		"surname":"Elodie",
+		"lastname":"Felix",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
+	},
+	{
+		"avatar":"/img/avatars/04.jpg",
+		"surname":"Bénédicte",
+		"lastname":"Isabelle",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
+	},
+	{
+		"avatar":"/img/default-avatar.jpg",
+		"surname":"Alexandre",
+		"lastname":"Jacques",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
+	},
+	{
+		"avatar":"/img/default-avatar.jpg",
+		"surname":"Nicolas",
+		"lastname":"Michel",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
+	},
+	{
+		"avatar":"/img/default-avatar.jpg",
+		"surname":"Martin",
+		"lastname":"Nathan",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
+	},
+	{
+		"avatar":"/img/default-avatar.jpg",
+		"surname":"Martin",
+		"lastname":"Quentin",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
+	},
+	{
+		"avatar":"/img/default-avatar.jpg",
+		"surname":"Paul",
+		"lastname":"Richard",
+		"promotion": {
+			"year": 2020,
+			"major": "CLV"
+		}
+	}
+]
